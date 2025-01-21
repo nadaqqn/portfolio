@@ -9964,6 +9964,25 @@ h6,
   left: 30px;
 }
 
+.activity-item .portfolio-btn {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 4px;
+  opacity: 0;
+  transition: .5s;
+}
+
+.activity-item:hover .portfolio-btn {
+  opacity: 1;
+  width: calc(100% - 60px);
+  height: calc(100% - 60px);
+  top: 30px;
+  left: 30px;
+}
+
 .testimonial-carousel .owl-dots {
   margin-top: 25px;
   text-align: center;

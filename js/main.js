@@ -100,6 +100,18 @@
 
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
+
+    // activity isotope and filter
+    var activityIsotope = $('.activity-container').isotope({
+        itemSelector: '.activity-item',
+        layoutMode: 'fitRows'
+    });
+    $('#activity-filters li').on('click', function () {
+        $("#activity-filters li").removeClass('active');
+        $(this).addClass('active');
+
+        activityIsotope.isotope({filter: $(this).data('filter')});
+    });
     
     
     
